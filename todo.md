@@ -28,3 +28,4 @@ Long term todos
     - Ended at 19. Format Tweet Method
 8/20/2020 12:30am
     - Ended at 21. Rapid Implement of Bootstrap Theme
+1:47:55

@@ -2,9 +2,13 @@
 
 
 {% block content %}
-Welcome to Twitter Clone
+<div class = 'row'>
+    <div class = 'col mb-2'>
+        <h2 style="color: #6441a4;"> Your Feed </h2>
+    </div>
+</div>
 
-<div id='tweets'>
+<div class = 'row' id='tweets'>
     Loading...
 </div>
 
@@ -24,11 +28,11 @@ Welcome to Twitter Clone
 
     function likeBtn(tweet){
         return "<button class='btn btn-primary' onclick=handleDidLike(" + 
-        tweet.id + "," + tweet.Likes + ")>" + tweet.likes + " Like</button>"
+        tweet.id + "," + tweet.Likes + ")>" + tweet.likes + " Likes</button>"
     }
 
     function formatTweetElement(tweet){
-        var formattedTweet = "<div class='mb-4 tweet' id='tweet-id''" + tweet.id 
+        var formattedTweet = "<div class='col-12 col-md-10 mx-auto border rounded py=3 mb-4 tweet' id='tweet-id''" + tweet.id 
         +" '><p>" + tweet.content + 
             "</p><div class='btn-group'>" + likeBtn(tweet) +
             "</div></div>"
