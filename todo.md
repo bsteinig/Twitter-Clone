@@ -21,3 +21,8 @@ Long term todos
 - Notifications
 - DM
 - Explore
+
+8/19/2020 3:00pm
+    - Ended at 14.Bootstrap and Django Templates
+8/19/2020 8:43pm
+    - Ended at 19. Format Tweet Method

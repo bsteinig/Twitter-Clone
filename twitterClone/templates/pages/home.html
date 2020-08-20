@@ -1,1 +1,39 @@
-<h1>Twitter Clone</h1>
+{% extends 'base.html' %}
+
+
+{% block content %}
+Welcome to Twitter Clone
+
+<div id='tweets'>
+    Loading...
+</div>
+
+<script>
+    const tweetsElement = document.getElementById("tweets") // getting html element
+    //tweetsElement.innerHTML = 'Loading...' // set new html in that ^ element
+
+    const xhr  =  new XMLHttpRequest()
+    const method = 'GET' // as  opposed to 'POST'
+    const url = "/tweets "
+    const responseType = "json"
+
+    xhr.responseType = responseType
+    xhr.open(method, url)
+    xhr.onload = function() {
+        const serverResponse = xhr.response
+        var listedItems = serverResponse.response; //array
+        var finalTweetStr = ""
+        var i;
+        for(i = 0; i<listedItems.length; i++){
+            console.log(i)
+            console.log(listedItems[i])
+            var currentItem = "<div><h1>" + listedItems[i].id + "<h1>" + "<p>" + listedItems[i].content + "</p></div>"
+                finalTweetStr += currentItem    
+        }
+        tweetsElement.innerHTML =  finalTweetStr
+        //console.log(listedItems)
+    }
+
+    xhr.send()
+</script>
+{% endblock content %}
