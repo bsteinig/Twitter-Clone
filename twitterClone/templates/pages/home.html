@@ -17,6 +17,23 @@ Welcome to Twitter Clone
     const url = "/tweets "
     const responseType = "json"
 
+    function handleDidLike(tweet_id, currentCount) {
+        console.log(tweet_id,currentCount)
+        
+    }
+
+    function likeBtn(tweet){
+        return "<button class='btn btn-primary' onclick=handleDidLike(" + 
+        tweet.id + "," + tweet.Likes + ")>" + tweet.likes + " Like</button>"
+    }
+
+    function formatTweetElement(tweet){
+        var formattedTweet = "<div class='mb-4 tweet' id='tweet-id''" + tweet.id 
+        +" '><p>" + tweet.content + 
+            "</p><div class='btn-group'>" + likeBtn(tweet) +
+            "</div></div>"
+        return formattedTweet
+    }
     xhr.responseType = responseType
     xhr.open(method, url)
     xhr.onload = function() {
@@ -27,7 +44,8 @@ Welcome to Twitter Clone
         for(i = 0; i<listedItems.length; i++){
             console.log(i)
             console.log(listedItems[i])
-            var currentItem = "<div><h1>" + listedItems[i].id + "<h1>" + "<p>" + listedItems[i].content + "</p></div>"
+            var tweetObj =  listedItems[i]
+            var currentItem = formatTweetElement(tweetObj)
                 finalTweetStr += currentItem    
         }
         tweetsElement.innerHTML =  finalTweetStr
