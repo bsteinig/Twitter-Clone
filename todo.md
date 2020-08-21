@@ -13,6 +13,7 @@
         - Image - Media storage server
     - Delete
     - Retweeting
+    - Liking
 
 3. Following / Followers
 
@@ -28,4 +29,6 @@ Long term todos
     - Ended at 19. Format Tweet Method
 8/20/2020 12:30am
     - Ended at 21. Rapid Implement of Bootstrap Theme
-1:47:55
+8/21/2020 7:17pm
+    - Ended at 24. Successful Form Redirect
+    
