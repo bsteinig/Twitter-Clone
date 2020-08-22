@@ -31,4 +31,5 @@ Long term todos
     - Ended at 21. Rapid Implement of Bootstrap Theme
 8/21/2020 7:17pm
     - Ended at 24. Successful Form Redirect
-    
+8/22/2020 7:00pm
+    - Ended at 28. Handling Ajax Requests
