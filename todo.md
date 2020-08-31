@@ -33,3 +33,5 @@ Long term todos
     - Ended at 24. Successful Form Redirect
 8/22/2020 7:00pm
     - Ended at 28. Handling Ajax Requests
+8/30/2020 7:55pm
+    - Ended at 2:39:53 
