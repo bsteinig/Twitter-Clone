@@ -35,3 +35,5 @@ Long term todos
     - Ended at 28. Handling Ajax Requests
 8/30/2020 7:55pm
     - Ended at 2:39:53 
+9/13/2020
+    - 
